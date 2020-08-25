@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1, user-scalable=0, maximum-scale=1, minimum-scale=1">
+  <title>SDMS-435/SDMS-435.avi - SeDog在线长片详情</title>
+  <link rel="stylesheet" href="/static/css/pure-min.css">
+  <link rel="stylesheet" href="/static/css/main.css">
+  <link rel="shortcut icon" href="/static/img/logo.jpg">
+  <script src="/static/js/aall.js"></script>
+  <script src="/static/js/fg2-1.8.0.js"></script>
+</head>
+<body>
+<div class="pure-g" id="main">
+  <div class="pure-u-1 pure-menu" id="nav">
+  <ul class="pure-menu-list">
+    <li class="pure-menu-item" style="text-align: center">
+      <a href="/"><img id="logo" class="pure-img" src="/static/img/logo.jpg"/></a>
+      <span id="logo-text">
+        SeDog
+      </span>
+    </li>
+
+    <li class="pure-menu-heading">
+      <a href="https://00aaabb.com/i/jp32da" target="_blank">APP下载</a>
+    </li>
+
+    <li class="pure-menu-heading">
+      <a href="https://11aaaww.com/i/jp32da" target="_blank">论坛APP</a>
+    </li>
+
+    <li class="pure-menu-heading">
+      <a href="https://22aahhh.com/i/jp32da" target="_blank">论坛新站</a>
+    </li>
+
+    <li class="pure-menu-heading">
+      <a onclick="toggleUI('nav0')">VIP精品</a>
+    </li>
+    <div id="nav0" style="display: none;">
+      <li class="pure-menu-item">
+        <a href="/fanhao/newest#header" class="pure-menu-link">最近更新</a>
+      </li>
+      <li class="pure-menu-item">
+        <a href="/fanhao/tag/%E6%97%A0%E7%A0%81#header" class="pure-menu-link">无码精品</a>
+      </li>
+      <li class="pure-menu-item">
+        <a href="/fanhao/tag/%E6%9C%89%E7%A0%81#header" class="pure-menu-link">有码精品</a>
+      </li>
+    </div>
+
+    <li class="pure-menu-heading">
+      <a onclick="toggleUI('nav1')">在线长片</a>
+    </li>
+    <div id="nav1" style="display: none;">
+      <li class="pure-menu-item">
+        <a href="/video/newest#header" class="pure-menu-link">最近更新</a>
+      </li>
+      <li class="pure-menu-item">
+        <a href="/video/tags#header" class="pure-menu-link">影片分类</a>
+      </li>
+      <li class="pure-menu-item">
+        <a href="/video/random#header" class="pure-menu-link">随机推荐</a>
+      </li>
+      <li class="pure-menu-item">
+        <a href="/video/daily-ranking#header" class="pure-menu-link">今日排行</a>
+      </li>
+      <li class="pure-menu-item">
+        <a href="/video/weekly-ranking#header" class="pure-menu-link">本周排行</a>
+      </li>
+      <li class="pure-menu-item">
+        <a href="/video/monthly-ranking#header" class="pure-menu-link">本月排行</a>
+      </li>
+    </div>
+
+    <li class="pure-menu-heading">
+      <a onclick="toggleUI('nav2')">在线短片</a>
+    </li>
+
+    <div id="nav2" style="display: none;">
+      <li class="pure-menu-item">
+        <a href="/smallvideo/daily-ranking#header" class="pure-menu-link">今日排行</a>
+      </li>
+      <li class="pure-menu-item">
+        <a href="/smallvideo/weekly-ranking#header" class="pure-menu-link">本周排行</a>
+      </li>
+      <li class="pure-menu-item">
+        <a href="/smallvideo/monthly-ranking#header" class="pure-menu-link">本月排行</a>
+      </li>
+      
+        <li class="pure-menu-item">
+          <a href="/smallvideo/list/%E6%97%A5%E6%9C%AC%E7%94%B5%E5%BD%B1#header" class="pure-menu-link ">日本电影</a>
+        </li>
+      
+        <li class="pure-menu-item">
+          <a href="/smallvideo/list/%E6%AC%A7%E7%BE%8E%E7%94%B5%E5%BD%B1#header" class="pure-menu-link ">欧美电影</a>
+        </li>
+      
+        <li class="pure-menu-item">
+          <a href="/smallvideo/list/%E5%8D%A1%E9%80%9A%E5%8A%A8%E6%BC%AB#header" class="pure-menu-link ">卡通动漫</a>
+        </li>
+      
+        <li class="pure-menu-item">
+          <a href="/smallvideo/list/%E4%B8%AD%E6%96%87%E5%AD%97%E5%B9%95#header" class="pure-menu-link ">中文字幕</a>
+        </li>
+      
+        <li class="pure-menu-item">
+          <a href="/smallvideo/list/%E6%97%A0%E7%A0%81%E5%A4%A7%E7%89%87#header" class="pure-menu-link ">无码大片</a>
+        </li>
+      
+        <li class="pure-menu-item">
+          <a href="/smallvideo/list/%E7%B4%A0%E4%BA%BA%E7%89%87#header" class="pure-menu-link ">素人片</a>
+        </li>
+      
+        <li class="pure-menu-item">
+          <a href="/smallvideo/list/%E5%86%99%E7%9C%9F#header" class="pure-menu-link ">写真</a>
+        </li>
+      
+    </div>
+
+    <li class="pure-menu-heading">
+      <a onclick="toggleUI('nav3')">激情图片</a>
+    </li>
+
+    <div id="nav3" style="display: none;">
+      <li class="pure-menu-item">
+        <a href="/picture/daily-ranking#header" class="pure-menu-link">今日排行</a>
+      </li>
+      <li class="pure-menu-item">
+        <a href="/picture/weekly-ranking#header" class="pure-menu-link">本周排行</a>
+      </li>
+      <li class="pure-menu-item">
+        <a href="/picture/monthly-ranking#header" class="pure-menu-link">本月排行</a>
+      </li>
+      
+        <li class="pure-menu-item">
+          <a href="/picture/list/%E4%BA%9A%E6%B4%B2%E8%89%B2%E5%9B%BE#header" class="pure-menu-link ">亚洲色图</a>
+        </li>
+      
+        <li class="pure-menu-item">
+          <a href="/picture/list/%E6%AC%A7%E7%BE%8E%E8%89%B2%E5%9B%BE#header" class="pure-menu-link ">欧美色图</a>
+        </li>
+      
+        <li class="pure-menu-item">
+          <a href="/picture/list/%E6%B8%85%E7%BA%AF%E5%94%AF%E7%BE%8E#header" class="pure-menu-link ">清纯唯美</a>
+        </li>
+      
+        <li class="pure-menu-item">
+          <a href="/picture/list/%E4%B9%B1%E4%BC%A6%E7%86%9F%E5%A5%B3#header" class="pure-menu-link ">乱伦熟女</a>
+        </li>
+      
+        <li class="pure-menu-item">
+          <a href="/picture/list/%E5%8D%A1%E9%80%9A%E5%8A%A8%E6%BC%AB#header" class="pure-menu-link ">卡通动漫</a>
+        </li>
+      
+        <li class="pure-menu-item">
+          <a href="/picture/list/%E8%87%AA%E6%8B%8D%E5%81%B7%E6%8B%8D#header" class="pure-menu-link ">自拍偷拍</a>
+        </li>
+      
+        <li class="pure-menu-item">
+          <a href="/picture/list/%E7%BE%8E%E8%85%BF%E4%B8%9D%E8%A2%9C#header" class="pure-menu-link ">美腿丝袜</a>
+        </li>
+      
+    </div>
+
+    <li class="pure-menu-heading">
+      <a onclick="toggleUI('nav4')">情色小说</a>
+    </li>
+
+    <div id="nav4" style="display: none;">
+      <li class="pure-menu-item">
+        <a href="/story/daily-ranking#header" class="pure-menu-link">今日排行</a>
+      </li>
+      <li class="pure-menu-item">
+        <a href="/story/weekly-ranking#header" class="pure-menu-link">本周排行</a>
+      </li>
+      <li class="pure-menu-item">
+        <a href="/story/monthly-ranking#header" class="pure-menu-link">本月排行</a>
+      </li>
+      
+        <li class="pure-menu-item">
+          <a href="/story/list/%E6%83%85%E8%89%B2%E7%AC%91%E8%AF%9D#header" class="pure-menu-link ">情色笑话</a>
+        </li>
+      
+        <li class="pure-menu-item">
+          <a href="/story/list/%E5%AE%B6%E5%BA%AD%E4%B9%B1%E4%BC%A6#header" class="pure-menu-link ">家庭乱伦</a>
+        </li>
+      
+        <li class="pure-menu-item">
+          <a href="/story/list/%E6%80%A7%E7%88%B1%E6%8A%80%E5%B7%A7#header" class="pure-menu-link ">性爱技巧</a>
+        </li>
+      
+        <li class="pure-menu-item">
+          <a href="/story/list/%E6%A0%A1%E5%9B%AD%E6%98%A5%E8%89%B2#header" class="pure-menu-link ">校园春色</a>
+        </li>
+      
+        <li class="pure-menu-item">
+          <a href="/story/list/%E6%AD%A6%E4%BE%A0%E5%8F%A4%E5%85%B8#header" class="pure-menu-link ">武侠古典</a>
+        </li>
+      
+        <li class="pure-menu-item">
+          <a href="/story/list/%E4%BA%BA%E5%A6%BB%E4%BA%A4%E6%8D%A2#header" class="pure-menu-link ">人妻交换</a>
+        </li>
+      
+        <li class="pure-menu-item">
+          <a href="/story/list/%E9%83%BD%E5%B8%82%E6%BF%80%E6%83%85#header" class="pure-menu-link ">都市激情</a>
+        </li>
+      
+        <li class="pure-menu-item">
+          <a href="/story/list/%E5%8F%A6%E7%B1%BB%E5%B0%8F%E8%AF%B4#header" class="pure-menu-link ">另类小说</a>
+        </li>
+      
+    </div>
+
+    <li class="pure-menu-heading">
+      <a onclick="toggleUI('nav5')">其它页面</a>
+    </li>
+
+    <div id="nav5" style="display: none;">
+      <li class="pure-menu-item">
+        <a href="/user/profile#header" class="pure-menu-link">用户信息</a>
+      </li>
+      <li class="pure-menu-item">
+        <a href="/help#header" class="pure-menu-link">帮助中心</a>
+      </li>
+      
+      
+      
+    </div>
+
+    <li class="pure-menu-heading">
+      <a href="https://44aaeee.com/i/jp32da" target="_blank">论坛新站</a>
+    </li>
+
+  </ul>
+</div>
+<script>
+  function toggleUI(id) {
+    e = document.getElementById(id);
+    if (e.style.display == '') {
+      e.style.display = 'none';
+    } else {
+      e.style.display = '';
+    }
+  }
+</script>
+  <div class="pure-u-1" id="content">
+    <style>
+  .baidu-box, .bdSug_app, .bdsug_copy {
+    display: none;
+  }
+</style>
+<header id="header">
+  <h1>SeDog: 绅士常来的网站</h1>
+  <div class="announcement">
+    <h2>永久域名:</h2> <a href="https://se.dog" target="_blank">http<span style="color: red">s</span>://se.dog</a>,请注意,http后面有个s
+    (此域名已经被屏蔽,可能无法访问,需要使用VPN或者代理翻墙访问)
+  </div>
+  
+  
+  
+  
+  
+  
+  <div class="announcement">
+    <h2>温馨提示:</h2>
+    如果访问网站很慢,可以试试使用备用网址,不同的网址,速度不一样 // 本网站推荐使用谷歌浏览器,在应用市场可以下载
+  </div>
+  <div class="announcement">
+    <h2>温馨提示:</h2>
+    本站已启用https,如果网站打不开,可以在网址前面加<span style="color: red">https://</span>, 如:
+    <script>document.write('<span style="color: red">https://</span>' + location.host);</script>
+  </div>
+  <div class="announcement">
+    <h2>温馨提示:</h2>
+    本站没有IOS和安卓的app,请不要相信网上下载的,破解VIP破解播放限制的APP,都是有病毒的
+  </div>
+  <div class="announcement">
+    <h2>温馨提示:</h2>
+    使用免费方法,发送推荐链接,推荐人数达10人以上,自动升级为本站VIP(24小时有效),
+  </div>
+  <div class="announcement">
+    <h2>温馨提示:</h2>
+    本站新增恢复码,可以恢复普通会员的播放次数和VIP,请<a href="/user/profile#body">点击这里</a>查看
+  </div>
+  <script>
+    displayTop3Ads()
+  </script>
+  <div class="search-box pure-u-1">
+    <select class="search-type">
+      <option value="/video/search/">长片</option>
+      <option value="/smallvideo/search/">短片</option>
+      <option value="/picture/search/">图片</option>
+      <option value="/story/search/">小说</option>
+    </select>
+    <input class="search-input" type="text" maxlength="30" value=""
+           onkeypress="if(event.keyCode == 13){search();}">
+    <button class="search-submit" onclick="search()">搜索</button>
+  </div>
+</header>
+<script>
+    function search() {
+        input = document.getElementsByClassName("search-input")[0];
+        search_type = document.getElementsByClassName("search-type")[0];
+        if (input.value.length == 0) {
+            return;
+        }
+        document.location = search_type.value + input.value;
+    }
+</script>
+<script charset="gbk" src="https://www.baidu.com/js/opensug.js"></script>
+<script>
+    BaiduSuggestion.bind(
+        document.getElementsByClassName('search-input')[0],
+        {},
+        search
+    );
+</script>
+    <script>
+      displayTopAds()
+      displayTop2Ads()
+    </script>
+    <div id="body" class="pure-g">
+      
+  <div class="pure-u-1">
+    <h1 class="pure-u-1" id="title">SDMS-435/SDMS-435.avi</h1>
+    
+      
+    
+    <video id="video" class="pure-u-1" controls src="/cdn/hls/5144957.m3u8"></video>
+    <script src="/static/js/hls-0.6.14.min.js"></script>
+    <script>
+      if (Hls.isSupported()) {
+        var video = document.getElementById('video');
+        var hls = new Hls();
+        hls.loadSource("/cdn/hls/5144957.m3u8");
+        hls.attachMedia(video);
+        hls.on(Hls.Events.MANIFEST_PARSED, function () {
+          video.play();
+        });
+      }
+    </script>
+  </div>
+
+  <script>
+    displayMiddleAds()
+  </script>
+
+  <div class="pure-u-1 tags">
+    <h3 style="margin: 0.2em;">下载本片:</h3>
+    
+      <a href="#">仅允许VIP会员下载</a>
+    
+  </div>
+
+  
+  <div class="pure-u-1 tags">
+    <h3 style="margin: 0.2em;">本片标签:</h3>
+    
+      <a href="/video/tag/%E4%BA%9A%E6%B4%B2#header"
+         class="button button-blue">亚洲</a>
+    
+      <a href="/video/tag/%E7%9C%8B%E4%B8%8D%E4%BA%86#header"
+         class="button button-grey">看不了</a>
+    
+      <a href="/video/tag/%E6%9C%89%E7%A0%81#header"
+         class="button button-orange">有码</a>
+    
+      <a href="/video/tag/%E5%BC%BA%E5%A5%B8#header"
+         class="button button-black">强奸</a>
+    
+      <a href="/video/tag/%E5%88%BA%E6%BF%80#header"
+         class="button button-green">刺激</a>
+    
+      <a href="/video/tag/%E4%B8%9D%E8%A2%9C#header"
+         class="button button-blue">丝袜</a>
+    
+      <a href="/video/tag/%E9%AB%98%E9%A2%9C%E5%80%BC#header"
+         class="button button-orange">高颜值</a>
+    
+      <a href="/video/tag/%E5%88%B6%E6%9C%8D#header"
+         class="button button-white">制服</a>
+    
+      <a href="/video/tag/%E6%97%A0%E7%A0%81#header"
+         class="button button-orange">无码</a>
+    
+      <a href="/video/tag/%E9%AA%9A#header"
+         class="button button-purple">骚</a>
+    
+      <a href="/video/tag/%E5%BE%A1%E5%A7%90#header"
+         class="button button-green">御姐</a>
+    
+      <a href="/video/tag/%E5%BE%A1%E5%A7%90#header"
+         class="button button-green">御姐</a>
+    
+      <a href="/video/tag/%E5%A4%A7%E5%A5%B6%E5%AD%90#header"
+         class="button button-orange">大奶子</a>
+    
+      <a href="/video/tag/%E9%87%8D%E5%8F%A3%E5%91%B3#header"
+         class="button button-purple">重口味</a>
+    
+      <a href="/video/tag/%E4%BA%BA%E5%A6%BB#header"
+         class="button button-green">人妻</a>
+    
+      <a href="/video/tag/%E8%90%9D%E8%8E%89#header"
+         class="button button-blue">萝莉</a>
+    
+      <a href="/video/tag/%E7%B2%89%E6%9C%A8%E8%80%B3#header"
+         class="button button-black">粉木耳</a>
+    
+      <a href="/video/tag/%E7%B2%89%E6%9C%A8%E8%80%B3#header"
+         class="button button-blue">粉木耳</a>
+    
+      <a href="/video/tag/%E8%82%9B%E4%BA%A4#header"
+         class="button button-orange">肛交</a>
+    
+      <a href="/video/tag/%E8%82%9B%E4%BA%A4#header"
+         class="button button-black">肛交</a>
+    
+      <a href="/video/tag/%E4%B8%AD%E6%96%87%E5%AD%97%E5%B9%95#header"
+         class="button button-red">中文字幕</a>
+    
+      <a href="/video/tag/%E5%81%B7%E6%83%85#header"
+         class="button button-red">偷情</a>
+    
+      <a href="/video/tag/%E7%BE%8E%E5%A5%B3#header"
+         class="button button-green">美女</a>
+    
+      <a href="/video/tag/%E6%AC%A7%E7%BE%8E#header"
+         class="button button-white">欧美</a>
+    
+      <a href="/video/tag/%E9%A2%9C%E5%B0%84#header"
+         class="button button-grey">颜射</a>
+    
+      <a href="/video/tag/%E5%81%B7%E6%8B%8D#header"
+         class="button button-orange">偷拍</a>
+    
+      <a href="/video/tag/%E7%86%9F%E5%A5%B3#header"
+         class="button button-black">熟女</a>
+    
+      <a href="/video/tag/%E9%BB%91%E4%BA%BA#header"
+         class="button button-white">黑人</a>
+    
+      <a href="/video/tag/%E5%9B%BD%E8%AF%AD#header"
+         class="button button-yellow">国语</a>
+    
+      <a href="/video/tag/SM%E8%B0%83%E6%95%99#header"
+         class="button button-white">SM调教</a>
+    
+      <a href="/video/tag/%E5%AE%B3%E7%BE%9E#header"
+         class="button button-orange">害羞</a>
+    
+      <a href="/video/tag/%E6%B8%85%E7%BA%AF#header"
+         class="button button-yellow">清纯</a>
+    
+      <a href="/video/tag/%E5%8A%A8%E6%BC%AB#header"
+         class="button button-red">动漫</a>
+    
+      <a href="/video/tag/%E8%87%AA%E6%85%B0#header"
+         class="button button-white">自慰</a>
+    
+      <a href="/video/tag/%E6%B7%AB%E8%8D%A1#header"
+         class="button button-grey">淫荡</a>
+    
+  </div>
+
+  <div class="pure-u-1 tags">
+    <h3 style="margin: 0.2em;">修改本片标签:</h3>
+    
+      <button onclick="changeTag()" class="button button-white">有码</button>
+    
+      <button onclick="changeTag()" class="button button-red">无码</button>
+    
+      <button onclick="changeTag()" class="button button-grey">亚洲</button>
+    
+      <button onclick="changeTag()" class="button button-yellow">欧美</button>
+    
+      <button onclick="changeTag()" class="button button-black">黑人</button>
+    
+      <button onclick="changeTag()" class="button button-orange">白人</button>
+    
+      <button onclick="changeTag()" class="button button-purple">萝莉</button>
+    
+      <button onclick="changeTag()" class="button button-white">学生</button>
+    
+      <button onclick="changeTag()" class="button button-black">御姐</button>
+    
+      <button onclick="changeTag()" class="button button-purple">人妻</button>
+    
+      <button onclick="changeTag()" class="button button-orange">熟女</button>
+    
+      <button onclick="changeTag()" class="button button-blue">主播</button>
+    
+      <button onclick="changeTag()" class="button button-black">高颜值</button>
+    
+      <button onclick="changeTag()" class="button button-orange">丑八怪</button>
+    
+      <button onclick="changeTag()" class="button button-orange">粉木耳</button>
+    
+      <button onclick="changeTag()" class="button button-purple">黑木耳</button>
+    
+      <button onclick="changeTag()" class="button button-green">大奶子</button>
+    
+      <button onclick="changeTag()" class="button button-orange">美胸</button>
+    
+      <button onclick="changeTag()" class="button button-orange">美臀</button>
+    
+      <button onclick="changeTag()" class="button button-purple">美腿</button>
+    
+      <button onclick="changeTag()" class="button button-purple">丝袜</button>
+    
+      <button onclick="changeTag()" class="button button-blue">制服</button>
+    
+      <button onclick="changeTag()" class="button button-purple">刺激</button>
+    
+      <button onclick="changeTag()" class="button button-yellow">淫荡</button>
+    
+      <button onclick="changeTag()" class="button button-black">清纯</button>
+    
+      <button onclick="changeTag()" class="button button-grey">害羞</button>
+    
+      <button onclick="changeTag()" class="button button-orange">动漫</button>
+    
+      <button onclick="changeTag()" class="button button-black">中文字幕</button>
+    
+      <button onclick="changeTag()" class="button button-blue">国语</button>
+    
+      <button onclick="changeTag()" class="button button-red">粤语</button>
+    
+      <button onclick="changeTag()" class="button button-white">自拍</button>
+    
+      <button onclick="changeTag()" class="button button-red">自慰</button>
+    
+      <button onclick="changeTag()" class="button button-blue">偷拍</button>
+    
+      <button onclick="changeTag()" class="button button-purple">野外</button>
+    
+      <button onclick="changeTag()" class="button button-white">温泉</button>
+    
+      <button onclick="changeTag()" class="button button-white">偷情</button>
+    
+      <button onclick="changeTag()" class="button button-red">写真</button>
+    
+      <button onclick="changeTag()" class="button button-white">好片</button>
+    
+      <button onclick="changeTag()" class="button button-blue">烂片</button>
+    
+      <button onclick="changeTag()" class="button button-yellow">校园</button>
+    
+      <button onclick="changeTag()" class="button button-green">乱伦</button>
+    
+      <button onclick="changeTag()" class="button button-grey">强奸</button>
+    
+      <button onclick="changeTag()" class="button button-purple">男同</button>
+    
+      <button onclick="changeTag()" class="button button-white">女同</button>
+    
+      <button onclick="changeTag()" class="button button-black">3p</button>
+    
+      <button onclick="changeTag()" class="button button-purple">群p</button>
+    
+      <button onclick="changeTag()" class="button button-black">双飞</button>
+    
+      <button onclick="changeTag()" class="button button-green">帅哥</button>
+    
+      <button onclick="changeTag()" class="button button-yellow">美女</button>
+    
+      <button onclick="changeTag()" class="button button-grey">重口味</button>
+    
+      <button onclick="changeTag()" class="button button-purple">SM调教</button>
+    
+      <button onclick="changeTag()" class="button button-blue">口交</button>
+    
+      <button onclick="changeTag()" class="button button-orange">肛交</button>
+    
+      <button onclick="changeTag()" class="button button-yellow">乳交</button>
+    
+      <button onclick="changeTag()" class="button button-purple">足交</button>
+    
+      <button onclick="changeTag()" class="button button-purple">波推</button>
+    
+      <button onclick="changeTag()" class="button button-blue">大保健</button>
+    
+      <button onclick="changeTag()" class="button button-purple">按摩</button>
+    
+      <button onclick="changeTag()" class="button button-black">潮喷</button>
+    
+      <button onclick="changeTag()" class="button button-purple">大屌</button>
+    
+      <button onclick="changeTag()" class="button button-grey">颜射</button>
+    
+      <button onclick="changeTag()" class="button button-grey">VR视频</button>
+    
+      <button onclick="changeTag()" class="button button-green">看不了</button>
+    
+  </div>
+
+  <div class="pure-u-1" id="change-tag-confirm">
+    添加或删除标签会影响本片的分类
+    <br>
+    为防恶意扰乱,修改需要扣1次浏览次数
+    <br>
+    感谢您为本片修改标签,请选择
+    <br>
+    <button class="button button-blue" id="tag-add"></button>
+    <button class="button button-red" id="tag-delete"></button>
+    <button class="button button-grey"
+            onclick="$('#change-tag-confirm').hide();">取消
+    </button>
+  </div>
+
+  <script src="/static/js/jquery-2.2.4.min.js"></script>
+  <script>
+    function changeTag() {
+      tag = event.target.innerHTML;
+      $('#change-tag-confirm').show();
+      var tagAdd = $('#tag-add');
+      tagAdd.html(tag + '+1');
+      tagAdd.unbind('click');
+      tagAdd.click(function () {
+        $.ajax({
+          url: '/video/158309/tag/' + tag,
+          type: 'POST'
+        });
+        $('#change-tag-confirm').hide();
+      });
+
+      var tagDelete = $('#tag-delete');
+      tagDelete.html(tag + '-1');
+      tagDelete.unbind('click');
+      tagDelete.click(function () {
+        $.ajax({
+          url: '/video/158309/tag/' + tag,
+          type: 'DELETE'
+        });
+        $('#change-tag-confirm').hide();
+      });
+    }
+  </script>
+
+    </div>
+    <script>
+      displayBottomAds()
+    </script>
+    <footer id="footer">
+  <div style="line-height:30px">提示：收藏本站，請使用Ctrl+D進行收藏 |
+    <a href="/help#header" target="_blank"><span color="#FF0000">获取本站永久域名-下载</span></a> |
+    <span color="#000000" style="background-color:#FF0">购买广告位:
+      <script>
+        var cmbuywe = 'f.qqrg.ou+';
+        cmbuywe += 'forad@';
+        cmbuywe += 'gmai';
+        cmbuywe += 'l.com';
+        document.write(cmbuywe)
+      </script>
+    </span>
+  </div>
+  <div style="line-height:20px">警告：如果您未滿18歲或您當地法律許可之法定年齡、或是對情色反感或是衛道人士建議您離開本站！</div>
+  <div style="line-height:20px">本站歸類為限制級、限定為成年者已具有完整行為能力且願接受本站內影音內容、及各項條款之網友才可瀏覽，未滿18歲謝絕進入。</div>
+  <div style="line-height:20px">本站已遵照「iWIN網路內容防護機構」進行分類，如有家長發現未成年兒童／少年瀏覽此站、請按照此方法過濾本站內容 &gt;&gt;
+    <a href="https://www.google.com.tw/#q=iWIN%E7%B6%B2%E8%B7%AF%E5%85%A7%E5%AE%B9%E9%98%B2%E8%AD%B7%E6%A9%9F%E6%A7%8B"
+       target="_blank"><span color="#FF0000">『網站分級制度』</span></a></div>
+
+  <div style="display: none">
+    2020-08-17 09:15:01(229221)
+  </div>
+
+  
+
+  <script type="text/javascript" src="/static/js/tongji.js"></script>
+</footer>
+  </div>
+</div>
+</body>
+</html>

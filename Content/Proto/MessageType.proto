@@ -1,0 +1,10 @@
+
+syntax = "proto3";
+package pb;
+option go_package = ".;pb";
+
+enum MT
+{
+    MT_INVALID = 0;
+    GameLogin = 1001;
+}

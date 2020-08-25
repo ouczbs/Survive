@@ -1,0 +1,127 @@
+Excute current Action :
+cmd:   EditorMenuActions.py -f AutoGenPbc -p E:\\ouczbs\\Survive\\Content\\Script
+ExcuteDict AutoGenPbc
+args.parms E:\\ouczbs\\Survive\\Content\\Script
+Genpbc.AutoGenPbc E:\\ouczbs\\Survive\\Content\\Script
+[Errno 2] No such file or directory: 'E:\\\\ouczbs\\\\Survive\\\\Content\\\\Script/Proto/xCmd.proto'
+Excute current Action :
+cmd:   EditorMenuActions.py -f AutoGenPbc -p E:\\ouczbs\\Survive\\Content\\Script
+ExcuteDict AutoGenPbc
+args.parms E:\\ouczbs\\Survive\\Content\\Script
+Genpbc.AutoGenPbc E:\\ouczbs\\Survive\\Content\\Script
+[Errno 2] No such file or directory: 'E:\\\\ouczbs\\\\Survive\\\\Content\\\\Script/Proto/xCmd.proto'
+Excute current Action :
+cmd:   EditorMenuActions.py -f AutoGenPbc -p E:\\ouczbs\\Survive\\Content\\Script
+ExcuteDict AutoGenPbc
+args.parms E:\\ouczbs\\Survive\\Content\\Script
+Genpbc.AutoGenPbc E:\\ouczbs\\Survive\\Content\\Script
+[Errno 2] No such file or directory: 'E:\\\\ouczbs\\\\Survive\\\\Content\\\\Script/Proto/xCmd.proto'
+Excute current Action :
+cmd:   EditorMenuActions.py -f AutoGenPbc -p E:\\ouczbs\\Survive\\Content\\Script
+ExcuteDict AutoGenPbc
+args.parms E:\\ouczbs\\Survive\\Content\\Script
+Genpbc.AutoGenPbc E:\\ouczbs\\Survive\\Content\\Script
+[Errno 2] No such file or directory: 'E:\\\\ouczbs\\\\Survive\\\\Content\\\\Script/Proto/xCmd.proto'
+Excute current Action :
+cmd:   EditorMenuActions.py -f AutoGenBlueprintTypeRefForLua -p E:\\ouczbs\\Survive\\Content\\Script
+ExcuteDict AutoGenBlueprintTypeRefForLua
+args.parms E:\\ouczbs\\Survive\\Content\\Script
+GenLuaRef.AutoGenBlueprintTypeRefForLua E:\\ouczbs\\Survive\\Content\\Script
+excute  E:\\ouczbs\\Survive\\Content\\Script AutoGenBlueprintTypeRefForLua
+[Errno 2] No such file or directory: 'E:\\\\ouczbs\\\\Survive\\\\Content\\\\Script/Script/GamePlay/Gen/BlueprintTypeGen.lua'
+Excute current Action :
+cmd:   EditorMenuActions.py -f AutoGenBlueprintTypeRefForLua -p E:\\ouczbs\\Survive\\Content\\
+ExcuteDict AutoGenBlueprintTypeRefForLua
+args.parms E:\\ouczbs\\Survive\\Content\\
+GenLuaRef.AutoGenBlueprintTypeRefForLua E:\\ouczbs\\Survive\\Content\\
+excute  E:\\ouczbs\\Survive\\Content\\ AutoGenBlueprintTypeRefForLua
+argument should be integer or bytes-like object, not 'str'
+Excute current Action :
+cmd:   EditorMenuActions.py -f AutoGenPbc -p E:\\ouczbs\\Survive\\Content\\
+ExcuteDict AutoGenPbc
+args.parms E:\\ouczbs\\Survive\\Content\\
+Genpbc.AutoGenPbc E:\\ouczbs\\Survive\\Content\\
+AutoGenPbc_Map
+AutoGenPbc_Id
+AutoGenPbc_Enum
+Excute current Action :
+cmd:   EditorMenuActions.py -f AutoGenPbc -p E:\\ouczbs\\Survive\\Content\\
+ExcuteDict AutoGenPbc
+args.parms E:\\ouczbs\\Survive\\Content\\
+Genpbc.AutoGenPbc E:\\ouczbs\\Survive\\Content\\
+AutoGenPbc_Map
+AutoGenPbc_Id
+AutoGenPbc_Enum
+Excute current Action :
+cmd:   EditorMenuActions.py -f AutoGenPbc -p E:\\ouczbs\\Survive\\Content\\
+ExcuteDict AutoGenPbc
+args.parms E:\\ouczbs\\Survive\\Content\\
+Genpbc.AutoGenPbc E:\\ouczbs\\Survive\\Content\\
+AutoGenPbc_Map
+AutoGenPbc_Id
+AutoGenPbc_Enum
+Excute current Action :
+cmd:   EditorMenuActions.py -f AutoGenBlueprintTypeRefForLua -p E:\\ouczbs\\Survive\\Content\\
+ExcuteDict AutoGenBlueprintTypeRefForLua
+args.parms E:\\ouczbs\\Survive\\Content\\
+GenLuaRef.AutoGenBlueprintTypeRefForLua E:\\ouczbs\\Survive\\Content\\
+excute  E:\\ouczbs\\Survive\\Content\\ AutoGenBlueprintTypeRefForLua
+argument should be integer or bytes-like object, not 'str'
+Excute current Action :
+cmd:   EditorMenuActions.py -f AutoGenBlueprintTypeRefForLua -p E:\\ouczbs\\Survive\\Content\\
+ExcuteDict AutoGenBlueprintTypeRefForLua
+args.parms E:\\ouczbs\\Survive\\Content\\
+GenLuaRef.AutoGenBlueprintTypeRefForLua E:\\ouczbs\\Survive\\Content\\
+excute  E:\\ouczbs\\Survive\\Content\\ AutoGenBlueprintTypeRefForLua
+name 'searchStr' is not defined
+Excute current Action :
+cmd:   EditorMenuActions.py -f AutoGenBlueprintTypeRefForLua -p E:\\ouczbs\\Survive\\Content\\
+ExcuteDict AutoGenBlueprintTypeRefForLua
+args.parms E:\\ouczbs\\Survive\\Content\\
+GenLuaRef.AutoGenBlueprintTypeRefForLua E:\\ouczbs\\Survive\\Content\\
+excute  E:\\ouczbs\\Survive\\Content\\ AutoGenBlueprintTypeRefForLua
+Excute current Action :
+cmd:   EditorMenuActions.py -f AutoGenBlueprintTypeRefForLua -p E:\\ouczbs\\Survive\\Content\\
+ExcuteDict AutoGenBlueprintTypeRefForLua
+args.parms E:\\ouczbs\\Survive\\Content\\
+GenLuaRef.AutoGenBlueprintTypeRefForLua E:\\ouczbs\\Survive\\Content\\
+excute  E:\\ouczbs\\Survive\\Content\\ AutoGenBlueprintTypeRefForLua
+can't concat str to bytes
+Excute current Action :
+cmd:   EditorMenuActions.py -f AutoGenBlueprintTypeRefForLua -p E:\\ouczbs\\Survive\\Content\\
+ExcuteDict AutoGenBlueprintTypeRefForLua
+args.parms E:\\ouczbs\\Survive\\Content\\
+GenLuaRef.AutoGenBlueprintTypeRefForLua E:\\ouczbs\\Survive\\Content\\
+excute  E:\\ouczbs\\Survive\\Content\\ AutoGenBlueprintTypeRefForLua
+Excute current Action :
+cmd:   EditorMenuActions.py -f AutoGenBlueprintTypeRefForLua -p E:\\ouczbs\\Survive\\Content\\
+ExcuteDict AutoGenBlueprintTypeRefForLua
+args.parms E:\\ouczbs\\Survive\\Content\\
+GenLuaRef.AutoGenBlueprintTypeRefForLua E:\\ouczbs\\Survive\\Content\\
+excute  E:\\ouczbs\\Survive\\Content\\ AutoGenBlueprintTypeRefForLua
+Excute current Action :
+cmd:   EditorMenuActions.py -f AutoGenPbc -p E:\\ouczbs\\Survive\\Content\\
+ExcuteDict AutoGenPbc
+args.parms E:\\ouczbs\\Survive\\Content\\
+Genpbc.AutoGenPbc E:\\ouczbs\\Survive\\Content\\
+AutoGenPbc_Map
+AutoGenPbc_Id
+AutoGenPbc_Enum
+Excute current Action :
+cmd:   EditorMenuActions.py -f AutoGenBlueprintTypeRefForLua -p E:\\ouczbs\\Survive\\Content\\
+ExcuteDict AutoGenBlueprintTypeRefForLua
+args.parms E:\\ouczbs\\Survive\\Content\\
+GenLuaRef.AutoGenBlueprintTypeRefForLua E:\\ouczbs\\Survive\\Content\\
+excute  E:\\ouczbs\\Survive\\Content\\ AutoGenBlueprintTypeRefForLua
+Excute current Action :
+cmd:   EditorMenuActions.py -f AutoGenBlueprintTypeRefForLua -p E:\\ouczbs\\Survive\\Content\\
+ExcuteDict AutoGenBlueprintTypeRefForLua
+args.parms E:\\ouczbs\\Survive\\Content\\
+GenLuaRef.AutoGenBlueprintTypeRefForLua E:\\ouczbs\\Survive\\Content\\
+excute  E:\\ouczbs\\Survive\\Content\\ AutoGenBlueprintTypeRefForLua
+Excute current Action :
+cmd:   EditorMenuActions.py -f AutoGenBlueprintTypeRefForLua -p E:\\ouczbs\\Survive\\Content\\
+ExcuteDict AutoGenBlueprintTypeRefForLua
+args.parms E:\\ouczbs\\Survive\\Content\\
+GenLuaRef.AutoGenBlueprintTypeRefForLua E:\\ouczbs\\Survive\\Content\\
+excute  E:\\ouczbs\\Survive\\Content\\ AutoGenBlueprintTypeRefForLua

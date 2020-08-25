@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1, user-scalable=0, maximum-scale=1, minimum-scale=1">
+  <title>用户信息 - SeDog</title>
+  <link rel="stylesheet" href="/static/css/pure-min.css">
+  <link rel="stylesheet" href="/static/css/main.css">
+  <link rel="shortcut icon" href="/static/img/logo.jpg">
+  <script src="/static/js/aall.js"></script>
+  <script src="/static/js/fg2-1.8.0.js"></script>
+</head>
+<body>
+<div class="pure-g" id="main">
+  <div class="pure-u-1 pure-menu" id="nav">
+  <ul class="pure-menu-list">
+    <li class="pure-menu-item" style="text-align: center">
+      <a href="/"><img id="logo" class="pure-img" src="/static/img/logo.jpg"/></a>
+      <span id="logo-text">
+        SeDog
+      </span>
+    </li>
+
+    <li class="pure-menu-heading">
+      <a href="https://00aaabb.com/i/jp32da" target="_blank">APP下载</a>
+    </li>
+
+    <li class="pure-menu-heading">
+      <a href="https://11aaaww.com/i/jp32da" target="_blank">论坛APP</a>
+    </li>
+
+    <li class="pure-menu-heading">
+      <a href="https://22aahhh.com/i/jp32da" target="_blank">论坛新站</a>
+    </li>
+
+    <li class="pure-menu-heading">
+      <a onclick="toggleUI('nav0')">VIP精品</a>
+    </li>
+    <div id="nav0" style="display: none;">
+      <li class="pure-menu-item">
+        <a href="/fanhao/newest#header" class="pure-menu-link">最近更新</a>
+      </li>
+      <li class="pure-menu-item">
+        <a href="/fanhao/tag/%E6%97%A0%E7%A0%81#header" class="pure-menu-link">无码精品</a>
+      </li>
+      <li class="pure-menu-item">
+        <a href="/fanhao/tag/%E6%9C%89%E7%A0%81#header" class="pure-menu-link">有码精品</a>
+      </li>
+    </div>
+
+    <li class="pure-menu-heading">
+      <a onclick="toggleUI('nav1')">在线长片</a>
+    </li>
+    <div id="nav1" style="display: none;">
+      <li class="pure-menu-item">
+        <a href="/video/newest#header" class="pure-menu-link">最近更新</a>
+      </li>
+      <li class="pure-menu-item">
+        <a href="/video/tags#header" class="pure-menu-link">影片分类</a>
+      </li>
+      <li class="pure-menu-item">
+        <a href="/video/random#header" class="pure-menu-link">随机推荐</a>
+      </li>
+      <li class="pure-menu-item">
+        <a href="/video/daily-ranking#header" class="pure-menu-link">今日排行</a>
+      </li>
+      <li class="pure-menu-item">
+        <a href="/video/weekly-ranking#header" class="pure-menu-link">本周排行</a>
+      </li>
+      <li class="pure-menu-item">
+        <a href="/video/monthly-ranking#header" class="pure-menu-link">本月排行</a>
+      </li>
+    </div>
+
+    <li class="pure-menu-heading">
+      <a onclick="toggleUI('nav2')">在线短片</a>
+    </li>
+
+    <div id="nav2" style="display: none;">
+      <li class="pure-menu-item">
+        <a href="/smallvideo/daily-ranking#header" class="pure-menu-link">今日排行</a>
+      </li>
+      <li class="pure-menu-item">
+        <a href="/smallvideo/weekly-ranking#header" class="pure-menu-link">本周排行</a>
+      </li>
+      <li class="pure-menu-item">
+        <a href="/smallvideo/monthly-ranking#header" class="pure-menu-link">本月排行</a>
+      </li>
+      
+        <li class="pure-menu-item">
+          <a href="/smallvideo/list/%E6%97%A5%E6%9C%AC%E7%94%B5%E5%BD%B1#header" class="pure-menu-link ">日本电影</a>
+        </li>
+      
+        <li class="pure-menu-item">
+          <a href="/smallvideo/list/%E6%AC%A7%E7%BE%8E%E7%94%B5%E5%BD%B1#header" class="pure-menu-link ">欧美电影</a>
+        </li>
+      
+        <li class="pure-menu-item">
+          <a href="/smallvideo/list/%E5%8D%A1%E9%80%9A%E5%8A%A8%E6%BC%AB#header" class="pure-menu-link ">卡通动漫</a>
+        </li>
+      
+        <li class="pure-menu-item">
+          <a href="/smallvideo/list/%E4%B8%AD%E6%96%87%E5%AD%97%E5%B9%95#header" class="pure-menu-link ">中文字幕</a>
+        </li>
+      
+        <li class="pure-menu-item">
+          <a href="/smallvideo/list/%E6%97%A0%E7%A0%81%E5%A4%A7%E7%89%87#header" class="pure-menu-link ">无码大片</a>
+        </li>
+      
+        <li class="pure-menu-item">
+          <a href="/smallvideo/list/%E7%B4%A0%E4%BA%BA%E7%89%87#header" class="pure-menu-link ">素人片</a>
+        </li>
+      
+        <li class="pure-menu-item">
+          <a href="/smallvideo/list/%E5%86%99%E7%9C%9F#header" class="pure-menu-link ">写真</a>
+        </li>
+      
+    </div>
+
+    <li class="pure-menu-heading">
+      <a onclick="toggleUI('nav3')">激情图片</a>
+    </li>
+
+    <div id="nav3" style="display: none;">
+      <li class="pure-menu-item">
+        <a href="/picture/daily-ranking#header" class="pure-menu-link">今日排行</a>
+      </li>
+      <li class="pure-menu-item">
+        <a href="/picture/weekly-ranking#header" class="pure-menu-link">本周排行</a>
+      </li>
+      <li class="pure-menu-item">
+        <a href="/picture/monthly-ranking#header" class="pure-menu-link">本月排行</a>
+      </li>
+      
+        <li class="pure-menu-item">
+          <a href="/picture/list/%E4%BA%9A%E6%B4%B2%E8%89%B2%E5%9B%BE#header" class="pure-menu-link ">亚洲色图</a>
+        </li>
+      
+        <li class="pure-menu-item">
+          <a href="/picture/list/%E6%AC%A7%E7%BE%8E%E8%89%B2%E5%9B%BE#header" class="pure-menu-link ">欧美色图</a>
+        </li>
+      
+        <li class="pure-menu-item">
+          <a href="/picture/list/%E6%B8%85%E7%BA%AF%E5%94%AF%E7%BE%8E#header" class="pure-menu-link ">清纯唯美</a>
+        </li>
+      
+        <li class="pure-menu-item">
+          <a href="/picture/list/%E4%B9%B1%E4%BC%A6%E7%86%9F%E5%A5%B3#header" class="pure-menu-link ">乱伦熟女</a>
+        </li>
+      
+        <li class="pure-menu-item">
+          <a href="/picture/list/%E5%8D%A1%E9%80%9A%E5%8A%A8%E6%BC%AB#header" class="pure-menu-link ">卡通动漫</a>
+        </li>
+      
+        <li class="pure-menu-item">
+          <a href="/picture/list/%E8%87%AA%E6%8B%8D%E5%81%B7%E6%8B%8D#header" class="pure-menu-link ">自拍偷拍</a>
+        </li>
+      
+        <li class="pure-menu-item">
+          <a href="/picture/list/%E7%BE%8E%E8%85%BF%E4%B8%9D%E8%A2%9C#header" class="pure-menu-link ">美腿丝袜</a>
+        </li>
+      
+    </div>
+
+    <li class="pure-menu-heading">
+      <a onclick="toggleUI('nav4')">情色小说</a>
+    </li>
+
+    <div id="nav4" style="display: none;">
+      <li class="pure-menu-item">
+        <a href="/story/daily-ranking#header" class="pure-menu-link">今日排行</a>
+      </li>
+      <li class="pure-menu-item">
+        <a href="/story/weekly-ranking#header" class="pure-menu-link">本周排行</a>
+      </li>
+      <li class="pure-menu-item">
+        <a href="/story/monthly-ranking#header" class="pure-menu-link">本月排行</a>
+      </li>
+      
+        <li class="pure-menu-item">
+          <a href="/story/list/%E6%83%85%E8%89%B2%E7%AC%91%E8%AF%9D#header" class="pure-menu-link ">情色笑话</a>
+        </li>
+      
+        <li class="pure-menu-item">
+          <a href="/story/list/%E5%AE%B6%E5%BA%AD%E4%B9%B1%E4%BC%A6#header" class="pure-menu-link ">家庭乱伦</a>
+        </li>
+      
+        <li class="pure-menu-item">
+          <a href="/story/list/%E6%80%A7%E7%88%B1%E6%8A%80%E5%B7%A7#header" class="pure-menu-link ">性爱技巧</a>
+        </li>
+      
+        <li class="pure-menu-item">
+          <a href="/story/list/%E6%A0%A1%E5%9B%AD%E6%98%A5%E8%89%B2#header" class="pure-menu-link ">校园春色</a>
+        </li>
+      
+        <li class="pure-menu-item">
+          <a href="/story/list/%E6%AD%A6%E4%BE%A0%E5%8F%A4%E5%85%B8#header" class="pure-menu-link ">武侠古典</a>
+        </li>
+      
+        <li class="pure-menu-item">
+          <a href="/story/list/%E4%BA%BA%E5%A6%BB%E4%BA%A4%E6%8D%A2#header" class="pure-menu-link ">人妻交换</a>
+        </li>
+      
+        <li class="pure-menu-item">
+          <a href="/story/list/%E9%83%BD%E5%B8%82%E6%BF%80%E6%83%85#header" class="pure-menu-link ">都市激情</a>
+        </li>
+      
+        <li class="pure-menu-item">
+          <a href="/story/list/%E5%8F%A6%E7%B1%BB%E5%B0%8F%E8%AF%B4#header" class="pure-menu-link ">另类小说</a>
+        </li>
+      
+    </div>
+
+    <li class="pure-menu-heading">
+      <a onclick="toggleUI('nav5')">其它页面</a>
+    </li>
+
+    <div id="nav5" style="display: none;">
+      <li class="pure-menu-item">
+        <a href="/user/profile#header" class="pure-menu-link">用户信息</a>
+      </li>
+      <li class="pure-menu-item">
+        <a href="/help#header" class="pure-menu-link">帮助中心</a>
+      </li>
+      
+      
+      
+    </div>
+
+    <li class="pure-menu-heading">
+      <a href="https://44aaeee.com/i/jp32da" target="_blank">论坛新站</a>
+    </li>
+
+  </ul>
+</div>
+<script>
+  function toggleUI(id) {
+    e = document.getElementById(id);
+    if (e.style.display == '') {
+      e.style.display = 'none';
+    } else {
+      e.style.display = '';
+    }
+  }
+</script>
+  <div class="pure-u-1" id="content">
+    <style>
+  .baidu-box, .bdSug_app, .bdsug_copy {
+    display: none;
+  }
+</style>
+<header id="header">
+  <h1>SeDog: 绅士常来的网站</h1>
+  <div class="announcement">
+    <h2>永久域名:</h2> <a href="https://se.dog" target="_blank">http<span style="color: red">s</span>://se.dog</a>,请注意,http后面有个s
+    (此域名已经被屏蔽,可能无法访问,需要使用VPN或者代理翻墙访问)
+  </div>
+  
+  
+  
+  
+  
+  
+  <div class="announcement">
+    <h2>温馨提示:</h2>
+    如果访问网站很慢,可以试试使用备用网址,不同的网址,速度不一样 // 本网站推荐使用谷歌浏览器,在应用市场可以下载
+  </div>
+  <div class="announcement">
+    <h2>温馨提示:</h2>
+    本站已启用https,如果网站打不开,可以在网址前面加<span style="color: red">https://</span>, 如:
+    <script>document.write('<span style="color: red">https://</span>' + location.host);</script>
+  </div>
+  <div class="announcement">
+    <h2>温馨提示:</h2>
+    本站没有IOS和安卓的app,请不要相信网上下载的,破解VIP破解播放限制的APP,都是有病毒的
+  </div>
+  <div class="announcement">
+    <h2>温馨提示:</h2>
+    使用免费方法,发送推荐链接,推荐人数达10人以上,自动升级为本站VIP(24小时有效),
+  </div>
+  <div class="announcement">
+    <h2>温馨提示:</h2>
+    本站新增恢复码,可以恢复普通会员的播放次数和VIP,请<a href="/user/profile#body">点击这里</a>查看
+  </div>
+  <script>
+    displayTop3Ads()
+  </script>
+  <div class="search-box pure-u-1">
+    <select class="search-type">
+      <option value="/video/search/">长片</option>
+      <option value="/smallvideo/search/">短片</option>
+      <option value="/picture/search/">图片</option>
+      <option value="/story/search/">小说</option>
+    </select>
+    <input class="search-input" type="text" maxlength="30" value=""
+           onkeypress="if(event.keyCode == 13){search();}">
+    <button class="search-submit" onclick="search()">搜索</button>
+  </div>
+</header>
+<script>
+    function search() {
+        input = document.getElementsByClassName("search-input")[0];
+        search_type = document.getElementsByClassName("search-type")[0];
+        if (input.value.length == 0) {
+            return;
+        }
+        document.location = search_type.value + input.value;
+    }
+</script>
+<script charset="gbk" src="https://www.baidu.com/js/opensug.js"></script>
+<script>
+    BaiduSuggestion.bind(
+        document.getElementsByClassName('search-input')[0],
+        {},
+        search
+    );
+</script>
+    <script>
+      displayTopAds()
+      displayTop2Ads()
+    </script>
+    <div id="body" class="pure-g">
+      
+  <div class="pure-u-1">
+    
+      <h2 style="margin-bottom: 0.1em;">您当前身份:
+        <span style="color: red; font-size: 130%">普通用户</span></h2>
+      <h2 style="margin-top: 0.1em; margin-bottom: 0.1em;">剩余浏览次数为:
+        <span style="color: red; font-size: 130%">0</span></h2>
+
+      <h3 style="margin-top: 0.1em; margin-bottom: 0.1em;">恢复号: 99d6459bc077</h3>
+      <h3 style="margin-top: 0.1em; margin-bottom: 0.1em;">恢复码: c68d3eaa6c0c</h3>
+      <h3 style="margin-top: 0.1em; margin-bottom: 0.1em;">
+        <a href="https://zzzyy2.com/static/help/help.html#/?id=恢复码问题" target="_blank">恢复码问题</a>
+        /<a href="https://zzzyy2.com/static/help/help.html#/?id=账号问题" target="_blank">账号问题</a>
+      </h3>
+    
+
+    <hr>
+    <h2>有两种方法增加浏览次数: 付费和免费</h2>
+
+    <p>
+    <h2><span style="color: red;">付费方法: 购买卡密,充值VIP</span></h2>
+
+    <h4 style="margin: 1px;">购买本站VIP卡密以后,填写VIP卡号和VIP卡密,点击"充值VIP"即可成为VIP</h4>
+    <h4 style="margin: 1px;">如果VIP失效,可以使用VIP卡密(之前充值过的)恢复VIP</h4>
+    <h4 style="margin: 1px;">注意: VIP卡号和卡密都是10位,点卡需要兑换成VIP卡密才能用</h4>
+    <h4 style="margin: 1px;">注意: 如果充值/恢复出现500错误,请使用谷歌浏览器</h4>
+    <form action="/user/czhf" method="post">
+      <label>VIP卡号:</label><input name="c1" style="border: 1px solid; max-width: 45%;">
+      <button type="submit">充值</button>
+      <br>
+      <label>VIP卡密:</label><input name="c2" style="border: 1px solid; max-width: 45%;">
+      <button type="submit">恢复</button>
+    </form>
+
+    <h2><span style="color: red;">购买卡密方法: </span>
+      <a href="#lct">扫码支付</a>
+      
+      
+      
+      
+      
+      ===> <a href="https://zzzyy2.com/static/help/help.html" target="_blank">有问题?查看帮助</a>
+    </h2>
+
+
+    
+    
+    
+      
+      
+      
+      
+      
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    <script>
+      function goPay1(uri) {
+        window.open('http://47.114.49.150:33561' + uri + '?host=' + location.hostname);
+      }
+
+      function goPay2(uri) {
+        window.open('http://47.114.49.150:33562' + uri + '?host=' + location.hostname);
+      }
+
+      function goPay3(uri) {
+        window.open('https://p1.qq360cn.com' + uri + '?host=' + location.hostname);
+      }
+
+      function goPay4(uri) {
+        window.open('https://p2.qq360cn.com' + uri + '?host=' + location.hostname);
+      }
+    </script>
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    <h3 id="lct" style="margin: 1em 0 0.3em 0; color: red;">扫码支付</h3>
+    <h4 style="margin: 0.3em 0;">扫码支付: 支持支付宝/微信/QQ</h4>
+    <h3 style="margin: 0.3em 0;">30天VIP 30元:
+      <a href="javascript:goPay1('/user/pay/lct-all/30')">购买1</a>
+      <a href="javascript:goPay2('/user/pay/lct-all/30')">购买2</a>
+      <a href="javascript:goPay3('/user/pay/lct-all/30')">购买3</a>
+      <a href="javascript:goPay4('/user/pay/lct-all/30')">购买4</a>
+    </h3>
+    <h3 style="margin: 0.3em 0;">90天VIP 60元:
+      <a href="javascript:goPay1('/user/pay/lct-all/90')">购买1</a>
+      <a href="javascript:goPay2('/user/pay/lct-all/90')">购买2</a>
+      <a href="javascript:goPay3('/user/pay/lct-all/90')">购买3</a>
+      <a href="javascript:goPay4('/user/pay/lct-all/90')">购买4</a>
+    </h3>
+    <h3 style="margin: 0.3em 0;">180天VIP 90元:
+      <a href="javascript:goPay1('/user/pay/lct-all/180')">购买1</a>
+      <a href="javascript:goPay2('/user/pay/lct-all/180')">购买2</a>
+      <a href="javascript:goPay3('/user/pay/lct-all/180')">购买3</a>
+      <a href="javascript:goPay4('/user/pay/lct-all/180')">购买4</a>
+    </h3>
+    <h3 style="margin: 0.3em 0 1em 0;">360天VIP 150元:
+      <a href="javascript:goPay1('/user/pay/lct-all/360')">购买1</a>
+      <a href="javascript:goPay2('/user/pay/lct-all/360')">购买2</a>
+      <a href="javascript:goPay3('/user/pay/lct-all/360')">购买3</a>
+      <a href="javascript:goPay4('/user/pay/lct-all/360')">购买4</a>
+    </h3>
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    </p>
+
+    <hr>
+    <p>
+    <h2><span style="color: red;">免费方法:</span></h2>
+    <h3 style="margin: 1px;">推荐本网站给其它狼友: 推荐一人,点击一次您的浏览次数增加10次,无限叠加</h3>
+    <h3 style="margin: 1px;">赠送VIP: 24小时内点击人数达10人以上,自动升级为本站VIP(24小时内有效)</h3>
+    <h3 style="margin: 1px;">注意: 自己点击无效,同一个IP点击无效,被QQ或者微信拦截无效,同一人点击多次只算一次有效点击</h3>
+    <h4 style="word-break: break-all;">复制此链接
+      <a href="https://2zzzqq.com/intr/77cbc06a54d9e386">https://2zzzqq.com/intr/77cbc06a54d9e386</a>
+      发送到:
+    </h4>
+    <ul>
+      <li>QQ附近的人(强烈推荐)</li>
+      <li>贴吧(强烈推荐)</li>
+      <li>其它狼友论坛(强烈推荐)</li>
+      <li>QQ群</li>
+      <li>QQ好友</li>
+      <li>微信好友</li>
+      <li>米聊</li>
+    </ul>
+    <h4>推荐宣传语</h4>
+    <textarea rows="3" style="width: 100%; border: black solid 1px;">
+    免费看片,国产自拍,高清无码(如果被QQ拦截,请复制链接在其它浏览器打开) https://2zzzqq.com/intr/77cbc06a54d9e386
+    </textarea>
+    <textarea rows="3" style="width: 100%; border: black solid 1px;">
+    推荐一个可以免费看片的网站(如果被QQ拦截,请复制链接在其它浏览器打开) https://2zzzqq.com/intr/77cbc06a54d9e386
+    </textarea>
+    <textarea rows="3" style="width: 100%; border: black solid 1px;">
+    在线视频,击情图片,青涩小说(如果被QQ拦截,请复制链接在其它浏览器打开) https://2zzzqq.com/intr/77cbc06a54d9e386
+    </textarea>
+    </p>
+
+  </div>
+
+    </div>
+    <script>
+      displayBottomAds()
+    </script>
+    <footer id="footer">
+  <div style="line-height:30px">提示：收藏本站，請使用Ctrl+D進行收藏 |
+    <a href="/help#header" target="_blank"><span color="#FF0000">获取本站永久域名-下载</span></a> |
+    <span color="#000000" style="background-color:#FF0">购买广告位:
+      <script>
+        var cmbuywe = 'f.qqrg.ou+';
+        cmbuywe += 'forad@';
+        cmbuywe += 'gmai';
+        cmbuywe += 'l.com';
+        document.write(cmbuywe)
+      </script>
+    </span>
+  </div>
+  <div style="line-height:20px">警告：如果您未滿18歲或您當地法律許可之法定年齡、或是對情色反感或是衛道人士建議您離開本站！</div>
+  <div style="line-height:20px">本站歸類為限制級、限定為成年者已具有完整行為能力且願接受本站內影音內容、及各項條款之網友才可瀏覽，未滿18歲謝絕進入。</div>
+  <div style="line-height:20px">本站已遵照「iWIN網路內容防護機構」進行分類，如有家長發現未成年兒童／少年瀏覽此站、請按照此方法過濾本站內容 &gt;&gt;
+    <a href="https://www.google.com.tw/#q=iWIN%E7%B6%B2%E8%B7%AF%E5%85%A7%E5%AE%B9%E9%98%B2%E8%AD%B7%E6%A9%9F%E6%A7%8B"
+       target="_blank"><span color="#FF0000">『網站分級制度』</span></a></div>
+
+  <div style="display: none">
+    2020-08-17 09:10:37(869431)
+  </div>
+
+  
+
+  <script type="text/javascript" src="/static/js/tongji.js"></script>
+</footer>
+  </div>
+</div>
+</body>
+</html>

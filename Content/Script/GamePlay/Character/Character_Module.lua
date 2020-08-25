@@ -1,0 +1,3 @@
+
+GA.Character = {}
+

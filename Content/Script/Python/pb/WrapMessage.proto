@@ -1,0 +1,21 @@
+syntax = "proto3";
+package pb;
+option go_package = ".;pb";
+enum CommandList
+{
+    MT_SERVER_TYPE_START = 0 ;
+    // MT_TO_CENTER
+    // MT_ADD_COMPONENT
+	MT_ADD_ENGINE_COMPONENT = 1 ;
+
+    // MT_CENTER_TO_OTHER
+    MT_ADD_ENGINE_COMPONENT_ACK = 10 ;
+    MT_ADD_ENGINE_COMPONENT_LIST = 11 ;
+
+}
+
+message WrapMessage
+{
+  CommandList cmd   = 1; // 协议编号
+  bytes   content   = 2; // 协议二进制
+}
