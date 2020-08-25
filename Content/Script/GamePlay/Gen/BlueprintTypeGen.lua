@@ -10,6 +10,7 @@ local BpType = {
 	-- E:/ouczbs/Survive/Content/\AdvancedLocomotionV4\Blueprints end
 
 	-- E:/ouczbs/Survive/Content/\PlayerBuildingSystem\Blueprints start
+	BP_PlayerBuildController = '/Game/PlayerBuildingSystem/Blueprints/BP_PlayerBuildController' ,
 	BP_CeilingGrid = '/Game/PlayerBuildingSystem/Blueprints/BuildingBlueprints/BuildGrids/BP_CeilingGrid' ,
 	BP_DoorGrid = '/Game/PlayerBuildingSystem/Blueprints/BuildingBlueprints/BuildGrids/BP_DoorGrid' ,
 	BP_FoundationGrid = '/Game/PlayerBuildingSystem/Blueprints/BuildingBlueprints/BuildGrids/BP_FoundationGrid' ,

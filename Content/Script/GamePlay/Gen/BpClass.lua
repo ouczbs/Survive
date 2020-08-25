@@ -12,6 +12,7 @@ local BpClassMap = {
 	-- E:/ouczbs/Survive/Content/\AdvancedLocomotionV4\Blueprints end
 
 	-- E:/ouczbs/Survive/Content/\PlayerBuildingSystem\Blueprints start
+	BP_PlayerBuildController = BpType.BP_PlayerBuildController ,
 	BP_CeilingGrid = BpType.BP_CeilingGrid ,
 	BP_DoorGrid = BpType.BP_DoorGrid ,
 	BP_FoundationGrid = BpType.BP_FoundationGrid ,

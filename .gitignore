@@ -1,6 +1,8 @@
 .vs
 Binaries
 Intermediate
+Content\PlayerBuildingSystem
 Plugins\**\Binaries
 Plugins\**\Intermediate
+Survive.sln
 Saved
