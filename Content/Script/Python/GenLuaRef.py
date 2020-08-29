@@ -3,7 +3,8 @@ import os
 output_List = []
 output_List_BpClass = []
 def parseBPFile(file_dir, file_name):
-    if file_name.endswith("BP.uasset") or (file_name.startswith("BP_") and ".uasset" in file_name):
+    if file_name.endswith("BP.uasset") or (file_name.startswith("BP_") and ".uasset" in file_name) \
+    or file_name.endswith("UI.uasset") or (file_name.startswith("UI_") and ".uasset" in file_name):
         file_name = file_name.replace(".uasset" , "")
         output_List.append("\t{0} = '{1}/{0}' ,".format(file_name , file_dir ))
         output_List_BpClass.append("\t{0} = BpType.{0} ,".format(file_name ))

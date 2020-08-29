@@ -1,5 +1,5 @@
 
-GA.Network = {}
+GA.Network = GA.Network or {}
 
 require "Network.EProtoId"
 

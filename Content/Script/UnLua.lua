@@ -69,9 +69,11 @@ local function global_index(t, k)
 end
 local function Class(module , class_name , super_class)
 	local new_class = {}
+	if super_class then 
+		for k,v in pairs(super_class) do new_class[k] = v end
+	end
 	new_class.__index = Index
 	new_class.__newindex = NewIndex
-	new_class.super = super_class
 	new_class.__cname = class_name
 	if module ~= nil then
         module[class_name] = new_class
@@ -89,13 +91,18 @@ else
 	print("WITH_UE4_NAMESPACE==false");
 end
 local function logE(...)
-	print("error *****")
+	print("error ******************************")
 	print(...)
 end
 local function import(resource)
 	return UE4.UClass.Load(resource)
 end
-local GA = {}
+local GA = {
+	initManagerList = {} ,
+}
+function GA:AddInitManager(name , UManager) 
+	self.initManagerList[name] = UManager
+end
 _G.GA = GA
 _G.import = import
 _G.Class = Class

@@ -13,10 +13,6 @@
 PB_NS_BEGIN
 
 
-#define LUA_LIB
-#include <lua.h>
-#include <lauxlib.h>
-
 
 #include <stdio.h>
 #include <errno.h>
@@ -27,7 +23,6 @@ PB_NS_BEGIN
 #define PB_STATE     "pb.State"
 #define PB_BUFFER    "pb.Buffer"
 #define PB_SLICE     "pb.Slice"
-#define PB_MAX_SIZET 1024 * 16 * 16
 #define check_buffer(L,idx) ((pb_Buffer*)luaL_checkudata(L,idx,PB_BUFFER))
 #define test_buffer(L,idx)  ((pb_Buffer*)luaL_testudata(L,idx,PB_BUFFER))
 #define check_slice(L,idx)  ((pb_Slice*)luaL_checkudata(L,idx,PB_SLICE))

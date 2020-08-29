@@ -1,18 +1,19 @@
 local BpType = GA.BpType or {}
 local BpClassMap = {
 	-- bpmap reg auto-gen
-	-- E:/ouczbs/Survive/Content/\Blueprints start
+	-- ../../../../../ouczbs/Survive/Content/\Blueprints start
 	BP_LuaManager = BpType.BP_LuaManager ,
 	BP_MessageManager = BpType.BP_MessageManager ,
-	-- E:/ouczbs/Survive/Content/\Blueprints end
+	UI_AndriodWindow = BpType.UI_AndriodWindow ,
+	-- ../../../../../ouczbs/Survive/Content/\Blueprints end
 
-	-- E:/ouczbs/Survive/Content/\AdvancedLocomotionV4\Blueprints start
+	-- ../../../../../ouczbs/Survive/Content/\AdvancedLocomotionV4\Blueprints start
 	ALS_AnimMan_CharacterBP = BpType.ALS_AnimMan_CharacterBP ,
 	ALS_Base_CharacterBP = BpType.ALS_Base_CharacterBP ,
-	-- E:/ouczbs/Survive/Content/\AdvancedLocomotionV4\Blueprints end
+	-- ../../../../../ouczbs/Survive/Content/\AdvancedLocomotionV4\Blueprints end
 
-	-- E:/ouczbs/Survive/Content/\PlayerBuildingSystem\Blueprints start
-	BP_PlayerBuildController = BpType.BP_PlayerBuildController ,
+	-- ../../../../../ouczbs/Survive/Content/\PlayerBuildingSystem\Blueprints start
+	BP_BuildingAbility = BpType.BP_BuildingAbility ,
 	BP_CeilingGrid = BpType.BP_CeilingGrid ,
 	BP_DoorGrid = BpType.BP_DoorGrid ,
 	BP_FoundationGrid = BpType.BP_FoundationGrid ,
@@ -25,9 +26,18 @@ local BpClassMap = {
 	BP_MasterBuildPart = BpType.BP_MasterBuildPart ,
 	BP_WindowFrame_01 = BpType.BP_WindowFrame_01 ,
 	BP_BuildMaster = BpType.BP_BuildMaster ,
-	-- E:/ouczbs/Survive/Content/\PlayerBuildingSystem\Blueprints end
+	-- ../../../../../ouczbs/Survive/Content/\PlayerBuildingSystem\Blueprints end
+
+	-- ../../../../../ouczbs/Survive/Content/\TouchSystem\Blueprints start
+	UI_TouchWindow = BpType.UI_TouchWindow ,
+	-- ../../../../../ouczbs/Survive/Content/\TouchSystem\Blueprints end
 
 	-- bpmap reg auto-gen
+
+	SkeletalMesh = "SkeletalMesh",
+	StaticMeshComponent = "StaticMeshComponent",
+	StaticMesh = "StaticMesh",
+	LandScape = "Landscape",
 }
 
 -- -- 确认是不含资源的Library类再放进来强引用，否则放到上面动态创建

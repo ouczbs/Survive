@@ -8,20 +8,21 @@ public class Survive : ModuleRules
 	{
 		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
 	
-		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore" });
-		PublicDependencyModuleNames.AddRange(new string[] { "Unlua" ,"Lua" });
+		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore" ,"ApexDestruction" ,});
+
+        PublicDependencyModuleNames.AddRange(new string[] { "Unlua" , "Lua" });
 		PrivateDependencyModuleNames.AddRange(new string[] {  });
 		// avoid winsock.h and winsock2.h conflicts
 		PublicDefinitions.Add("ASIO_STANDALONE");
 		PublicDefinitions.Add("ASIO_NO_TYPEID");
 		PublicDefinitions.Add("ASIO_NO_EXCEPTIONS");
-		PrivateIncludePaths.Add("../ThirdParty/Asio/include/");
-		// Uncomment if you are using Slate UI
-		// PrivateDependencyModuleNames.AddRange(new string[] { "Slate", "SlateCore" });
+        PrivateIncludePaths.Add("../ThirdParty/Asio/include/");
+        // Uncomment if you are using Slate UI
+        // PrivateDependencyModuleNames.AddRange(new string[] { "Slate", "SlateCore" });
 
-		// Uncomment if you are using online features
-		// PrivateDependencyModuleNames.Add("OnlineSubsystem");
+        // Uncomment if you are using online features
+        // PrivateDependencyModuleNames.Add("OnlineSubsystem");
 
-		// To include OnlineSubsystemSteam, add it to the plugins section in your uproject file with the Enabled attribute set to true
-	}
+        // To include OnlineSubsystemSteam, add it to the plugins section in your uproject file with the Enabled attribute set to true
+    }
 }

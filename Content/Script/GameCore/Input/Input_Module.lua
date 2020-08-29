@@ -1,6 +1,5 @@
 
-GA.Input = {}
+GA.Input = GA.Input or {}
 
-require "GameCore.Input.Axis"
-require "GameCore.Input.Button"
-require "GameCore.Input.EButtonState"
+require "GameCore.Input.InputEvent"
+require "GameCore.Input.InputManager"

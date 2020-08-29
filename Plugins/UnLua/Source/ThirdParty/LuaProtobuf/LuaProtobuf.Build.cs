@@ -16,8 +16,8 @@ public class LuaProtobuf : ModuleRules
 
         PrivateIncludePaths.AddRange(
             new string[] {
-                 "ThirdParty/LuaProtobuf/Private",
                  "ThirdParty/LuaProtobuf/Public",
+                 "ThirdParty/LuaProtobuf/Private",
             }
             );
 	}

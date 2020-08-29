@@ -1,4 +1,4 @@
 
-GA.Entity = {}
+GA.Entity = GA.Entity or {}
 
 require "GameCore.Entity.EntityEventHandle"

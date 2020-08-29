@@ -74,6 +74,9 @@ typedef signed   long long  int64_t;
 #include <stddef.h>
 #include <limits.h>
 
+#define LUA_LIB
+#include <lua.h>
+#include <lauxlib.h>
 PB_NS_BEGIN
 
 int luaopen_pb(struct lua_State *L);

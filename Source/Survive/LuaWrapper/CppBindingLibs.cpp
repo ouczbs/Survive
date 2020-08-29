@@ -1,6 +1,5 @@
 #include "CppBindingLibs.h"
 #include "System/MessageManager.h"
-#include "lua.h"
 namespace proto
 {
 	int _send(lua_State* L)
@@ -16,4 +15,9 @@ namespace proto
 		}
 		return 1;
 	}
+}
+namespace custom_log
+{
+	
+
 }

@@ -12,9 +12,9 @@ end
 function class:OverrideInitGame()
     print("OverrideInitGame*******************")
     require "World"
+    require "GameGlobal"
     --创建各种message
     local WorldContext = self:GetWorld()
-    gWorld = GA.World.new()
     gWorld:InitializeWorld(WorldContext)
 end
 function class:ReceiveBeginPlay()

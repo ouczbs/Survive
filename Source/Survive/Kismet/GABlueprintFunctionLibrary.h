@@ -19,4 +19,5 @@ class SURVIVE_API UGABlueprintFunctionLibrary : public UBlueprintFunctionLibrary
 public:
 	UFUNCTION(BlueprintCallable, Category = "C++ Library")
 	static void SwitchMaterialWithParams(class UMaterialInterface* OriginMat, class UMaterialInstanceDynamic* NewMat);
+
 };
