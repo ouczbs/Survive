@@ -11,38 +11,15 @@ function class:init()
 	self._worldInput = GA.Input.InputEvent.new()
 end
 
-function class:destroy()
-	self.axisBindings = nil
-
-	self.actionBindings = nil
+function class:registerLuaInput(inputId, func , owner)
+	return self._worldInput:registerLuaInput(inputId, func, owner)
 end
 
-function class:bindAction(actionName, keyEventIndex, func , owner)
-	if not self.actionBindings[actionName] then 
-		self.actionBindings[actionName] = {}
-	end
-	return self._worldInput and self._worldInput:registerLuaInput(keyEventIndex, func, owner)
+function class:unRegisterLuaInput(inputId , func , owner)
+	return self._worldInput:unRegisterLuaInput(inputId, func, owner)
 end
 
-function class:unBindAction(actionName, keyEventIndex , func, owner)
-	if not self.actionBindings[actionName] then 
-		return
-	end
-	return self._worldInput and self._worldInput:unRegisterLuaInput(keyEventIndex, func, owner)
+function class:notifyInput(inputId, ...)
+    return self._worldInput:notifyInput(inputId, ...)
 end
-
-function class:bindAxis(axisName, func , owner)
-	return self._worldInput and self._worldInput:registerLuaInput(axisName, func, owner)
-end
-
-function class:unBindAxis(axisName , func , owner)
-	return self._worldInput and self._worldInput:unRegisterLuaInput(axisName, func, owner)
-end
-
-function class:resetAction(actionName)
-	self.actionBindings[actionName] = nil
-end
-
-function class:resetAxis(axisName)
-	self.axisBindings[axisName] = nil
-end
+GA:AddInitManager(class.__cname , class)

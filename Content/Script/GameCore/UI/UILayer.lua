@@ -1,4 +1,4 @@
---预定义层级，UIBase子类需要通过s_Layer变量指定自身层级
+--预定义层级，UIBase子类需要通过s_layer变量指定自身层级
 GA.UI.Layers = {
     Widgets3D           = 1,        --血量条，任务图标，对话气泡（在BPUICommon设置了ZOrder，重构时记得写在Lua里）
     Main                = 2, 	    --主界面，menumain专用

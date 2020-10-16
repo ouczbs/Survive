@@ -1,6 +1,5 @@
 
 require "UnLua"
-print("lua class : GameWorld.Character.CharacterAnimIK")
 local class = Class(GA.Character ,"CharacterAnimIK")
 
 function class:beginPlay()
@@ -12,9 +11,6 @@ function class:BlueprintInitializeAnimation()
 end
 
 
-function class:BlueprintUpdateAnimation(dt)
-    -- print(self:TryGetPawnOwner().__cname,"------------------------")
-end
 
 
 return class

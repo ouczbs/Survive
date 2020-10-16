@@ -1,14 +1,9 @@
 require "UnLua"
-print("GameWorld.Character.PlayCharacter")
 local class = Class(GA.Character ,"PlayCharacter")
 function class:Initialize(Initializer)
     self.super.Initialize(self)
-    print("Initializer PlayCharacter")
 end
-function class:ReceiveBeginPlay()
-    --self:AddTickPrerequisiteActor(self.Mesh)
-    print("ReceiveBeginPlay PlayCharacter")
-end
+
 --[[
 
 function class:Initialize(Initializer)

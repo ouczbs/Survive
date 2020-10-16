@@ -10,9 +10,9 @@ end
 
 function class:openUIWindowWithClassName(sClassName, bKeepOther)
     local uiClass = GA.UI[sClassName]
-    local layer = uiClass.s_Layer
+    local layer = uiClass.s_layer
     if not self.m_UiStack[layer] and layer then 
-        self.m_UiStack[layer] = GA.UI.UIStack.new()
+        self.m_UiStack[layer] = GA.UI.UIStack.new(layer)
     end
 	local retUI = self.m_UiStack[layer]:openUIWindowWithClass(uiClass, bKeepOther or false)
     return retUI

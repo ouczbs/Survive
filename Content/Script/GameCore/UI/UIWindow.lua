@@ -2,7 +2,7 @@ local class = class(GA.UI, "UIWindow")
 
 class.s_bpWindow = nil
 class.s_bClearSelfStack = false
-class.s_Layer = 0
+class.s_layer = 0
 
 function class:ctor()
 

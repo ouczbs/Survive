@@ -1,7 +1,6 @@
 
 --lua class : test_C
 require "UnLua"
-print("lua class : GameWorld.Character.CharacterControl")
 local class = Class(GA.Character ,"CharacterControl")
 function class:ReceiveBeginPlay()
     gWorld.message_beginPlay:addListener(self , "beginPlay")

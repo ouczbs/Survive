@@ -19,9 +19,9 @@ function class:_createLuaInterface()
 end
 
 function class:registerLuaInterface(eventID, func, owner, ...)
-    return self._worldInterface and self._worldInterface:registerLuaInterface(eventID, func, owner, ...)
+    return self._worldInterface:registerLuaInterface(eventID, func, owner, ...)
 end
 
 function class:unRegisterLuaInterface(eventID, func, owner, ...)
-    return self._worldInterface and self._worldInterface:unRegisterLuaInterface(eventID, func, owner, ...)
+    return self._worldInterface:unRegisterLuaInterface(eventID, func, owner, ...)
 end

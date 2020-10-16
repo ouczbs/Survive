@@ -1,11 +1,9 @@
 
-local class = Class(GA.Character ,"ALS_Character")
+local super = GA.Character.ALS_BaseCharacter
+local class = Class(GA.Character ,"ALS_Character" , super)
 
 function class:Initialize(Initializer)
-    print("Initialize ALS_Character")
+    super.Initialize(self , Initializer)
 end
 
-function class:ReceiveEndPlay()
-    print("ReceiveEndPlay ALS_Character")
-end
 return class

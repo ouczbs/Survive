@@ -5,5 +5,5 @@ function class:ctor()
 end
 
 function class:loadBpUI(bpclass)
-    return UWidgetBlueprintLibrary.Create(gWorld:getWorldContext(), bpclass)
+    return UE4.UWidgetBlueprintLibrary.Create(gWorld:getWorldContext(), bpclass)
 end

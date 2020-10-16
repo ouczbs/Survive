@@ -2,15 +2,8 @@
 require "UnLua"
 print("lua class : SurviveGameMode")
 local class = Class(_G,"SurviveGameMode")
-function class:Initialize(Initializer)
-    print("Initialize GameWorld")
-end
 
-function class:UserConstructionScript()
-    
-end
 function class:OverrideInitGame()
-    print("OverrideInitGame*******************")
     require "World"
     require "GameGlobal"
     --创建各种message
@@ -20,9 +13,6 @@ end
 function class:ReceiveBeginPlay()
     print("ReceiveBeginPlay GameMode")
     gWorld:beginPlay()
-    print(self.Object.Super)
-    print(self.Object.Respawn)
-    print(self:Respawn(true))
 end
 
 --[[

@@ -37,8 +37,6 @@ function class:calcuteDirection(txt)
         local LastVelocityRotation = UE4.UKismetMathLibrary.Conv_VectorToRotator(velocity)
         local diff = UE4.UKismetMathLibrary.NormalizedDeltaRotator(velocity)
         self.b_player.Direction = diff.Yaw
-        -- print(" ****** " .. txt .. " ****** ")
-        -- print( LastVelocityRotation.Yaw , self.b_player.CharacterRotation.Yaw , self.b_player.Direction)
     end
 end
 

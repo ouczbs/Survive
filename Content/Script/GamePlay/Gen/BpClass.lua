@@ -34,25 +34,21 @@ local BpClassMap = {
 
 	-- bpmap reg auto-gen
 
+	-- sbpmap reg auto-gen
+
+	-- sbpmap reg auto-gen
 	SkeletalMesh = "SkeletalMesh",
 	StaticMeshComponent = "StaticMeshComponent",
 	StaticMesh = "StaticMesh",
 	LandScape = "Landscape",
 }
 
--- -- 确认是不含资源的Library类再放进来强引用，否则放到上面动态创建
--- local NativeClassMap = {
--- 	GABlueprintFunctionLibrary = import("GABlueprintFunctionLibrary")
--- }
+
 local GeneratedBpClassMap = setmetatable({}, {__mode = "v"})
 
 function GA:loadBpClass()
 	local mt = {
 		__index = function(t, k)
-			-- local native = NativeClassMap[k]
-			-- if native then
-			-- 	return native
-			-- end
 			if not GeneratedBpClassMap[k] then
 				if BpClassMap[k] then 
 					GeneratedBpClassMap[k] = import(BpClassMap[k])
@@ -63,10 +59,6 @@ function GA:loadBpClass()
 			return GeneratedBpClassMap[k]
 		end
 	}
-	-- for _,native in pairs(NativeClassMap) do 
-	-- 	native.__index = Index
-	-- 	native.__newindex = NewIndex
-	-- end
 	self.BpClass = setmetatable({}, mt)
 end
 GA:loadBpClass()

@@ -12,7 +12,7 @@ function class:UserConstructionScript()
 end
 -- real time update m_ignoreActorArray 
 function class:init_ignoreActorArray()
-    local actors = UGameplayStatics.GetAllActorsOfClass(gWorld:getWorldContext() , GA.BpClass.LandScape)
+    local actors = UE4.UGameplayStatics.GetAllActorsOfClass(gWorld:getWorldContext() , GA.BpClass.LandScape)
     self.m_ignoreActorArray:Append(actors)
     self:AddIgnoreActor(self.Object)
 end
@@ -46,7 +46,7 @@ function class:Lua_AddActorCheck()
     local ignoreArray = self.m_ignoreActorArray
     local rayStart = self:K2_GetActorLocation()
     local rayEnd = rayStart + UE4.FVector(0, 0 , 1000)
-    local outHits, boolOut = UKismetSystemLibrary.SphereTraceMulti(gWorld:getWorldContext(),rayStart , rayEnd ,250 , ETraceTypeQuery.Visibility ,false , ignoreArray , EDrawDebugTrace.None , {} , true)
+    local outHits, boolOut = UE4.UKismetSystemLibrary.SphereTraceMulti(gWorld:getWorldContext(),rayStart , rayEnd ,250 , UEnum.ETraceTypeQuery.Visibility ,false , ignoreArray , UEnum.EDrawDebugTrace.None , {} , true)
     return boolOut
 end
 

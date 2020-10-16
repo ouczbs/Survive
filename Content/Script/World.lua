@@ -1,7 +1,4 @@
-if WITH_LUAIDE_DEBUG then
-    require("socket.core")
-    require("LuaPanda").start("127.0.0.1",8818)
-end
+
 require "GameCore.GC"
 
 require "GamePlay.GP"
@@ -18,23 +15,35 @@ local class = class(GA,"World")
 
 function class:ctor()  
     self._uWorldContext = nil
+    self._registerManager = {}
 end
-
+function class:registerLuaManager(key , luaclass)  
+    if self[key] then 
+        return
+    end
+    local manager = luaclass.new()
+    manager:init()
+    self[key] = manager
+    table.insert(self._registerManager , manager)
+end
+function class:registerUManager(key , luaclass)  
+    local manager =  self:spawnLuaActor(luaclass, UE4.FVector(0.0, 0.0, 0.0) , UE4.FRotator(0, 0, 0))
+    manager:init()
+    self[key] = manager
+    table.insert(self._registerManager , manager)
+end
 function class:InitializeWorld(WorldContext)
     self._uWorldContext = WorldContext
-    self.MessageManager = self:SpawnActorByLua(GA.Manager.MessageManager, UE4.FVector(0.0, 0.0, 0.0) , UE4.FRotator(0, 0, 0))
-    self.MessageManager:init()
-    self.EventBus = GA.Event.EventBus.new()
-    self.EventBus:init()
-    self.InterfaceBus = GA.Interface.InterfaceBus.new()
-    self.InterfaceBus:init()
-    self.UIManager = GA.UI.UIManager.new()
-    self.UIManager:init()
-    
-    for key,UManager in pairs(GA.initManagerList) do 
-        print(key ,UManager )
-        self[key] = UManager.new()
-        self[key]:init()
+    self:registerUManager("MessageManager" , GA.Manager.MessageManager)
+
+    self:registerLuaManager("EventBus" , GA.Event.EventBus)
+    self:registerLuaManager("InterfaceBus" , GA.Interface.InterfaceBus)
+    self:registerLuaManager("InputManager" , GA.Input.InputManager)
+    self:registerLuaManager("Scheduler" , GA.Time.Scheduler)
+    self:registerLuaManager("UIManager" , GA.UI.UIManager)
+
+    for key,luaclass in pairs(GA.initManagerList) do 
+        self:registerLuaManager(key , luaclass)
     end
     GA.initManagerList = nil
     -- self.MessageManager:Connect(GameConfig.Host);
@@ -63,14 +72,30 @@ function class:beginPlay()
 end
 
 function class:tick(dt)
-    if self.playerNet then self.playerNet:tick(dt) end
+    for _,manager in pairs(self._registerManager) do 
+        if manager.tick then 
+            manager:tick(dt)
+        end
+    end
 end
 function class:lateTick(dt)
-    if self.playerNet then self.playerNet:lateTick(dt) end
+    for _,manager in pairs(self._registerManager) do 
+        if manager.lateTick then 
+            manager:lateTick(dt)
+        end
+    end
 end
-function class:SpawnActorByLua(luaclass, uLocation , uRotation , params)
+
+function class:spawnActor(uclass, uLocation , uRotation , params)
+    local transform = UE4.FTransform(uRotation:ToQuat(), uLocation)
+    return self._uWorldContext:SpawnActor(uclass , transform , params and params.collisionHandle or UEnum.ESpawnActorCollisionHandlingMethod.AlwaysSpawn)
+end
+
+function class:spawnLuaActor(luaclass, uLocation , uRotation , params)
     local uclass,modulename = luaclass:GetUnluaBind()
     local transform = UE4.FTransform(uRotation:ToQuat(), uLocation)
-    return self._uWorldContext:SpawnActor(uclass , transform , params and params.collisionHandle or ESpawnActorCollisionHandlingMethod.AlwaysSpawn , self , self, modulename)
+    return self._uWorldContext:SpawnLuaActor(uclass , transform , params and params.collisionHandle or UEnum.ESpawnActorCollisionHandlingMethod.AlwaysSpawn , self , self, modulename)
 end
+
+
 return class

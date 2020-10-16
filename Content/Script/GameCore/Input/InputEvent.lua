@@ -19,7 +19,7 @@ function class:registerLuaInput(eventID, func, owner, ...)
 		logE("event must have owner.")
 		return
 	end
-	self.eventContent[eventID] = self.eventContent[eventID] or eventDelegate:new()
+	self.eventContent[eventID] = self.eventContent[eventID] or delegates:new()
 	return self.eventContent[eventID]:attach(func, owner, ...)
 end
 

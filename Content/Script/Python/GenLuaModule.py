@@ -4,7 +4,7 @@ module_dir_list = ["GameCore" , "GameManager" , "GamePlay"  ,"GameWorld", "GPMod
 module_file_list = ["GC.lua" , "GM.lua" , "GP.lua"  ,"GW.lua" ,"GPM.lua" ,"GWM.lua"]
 def CheckFileRequire(module_file , require_list):
     require_dict = {}
-    write_lines = []
+    write_lines = [""]
     with open(module_file , "r") as f:
         lines = [line for line in f.readlines() if "require" in line]
     for line in lines:
@@ -13,6 +13,7 @@ def CheckFileRequire(module_file , require_list):
     for require in require_list:
         if require not in require_dict:
             write_lines.append('require "{0}"'.format(require))
+    if len(write_lines) == 1 :return
     with open(module_file , "a+") as f:
         f.write("\n".join(write_lines))
 def CheckRequire(root_dir , module_file , require_name , module_name):

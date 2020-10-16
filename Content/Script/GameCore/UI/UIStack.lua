@@ -14,8 +14,9 @@ end
 function class:openUIWindowWithClass(uiClass, inIsKeepOther)
 	local tWindow , tIndex = _findUIWindow(self.m_UIBaseArray , uiClass )
 	if tWindow == nil then
-		tWindow = UWidgetBlueprintLibrary.Create(gWorld:getWorldContext() , uiClass.s_bpWindow)
-		tWindow:AddToViewport()
+		tWindow = UE4.UWidgetBlueprintLibrary.Create(gWorld:getWorldContext() , uiClass.s_bpWindow)
+		tWindow:AddToViewport(self.layer)
+		logE(self.layer , "layer")
 		tWindow:init()
 	end
 	return self:openUIInternal(tWindow, inIsKeepOther, tIndex)

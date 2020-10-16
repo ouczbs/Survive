@@ -13,7 +13,10 @@ local RegisterEnum = RegisterEnum
 local print = UEPrint
 _NotExist = _NotExist or {}
 local NotExist = _NotExist
-
+if WITH_LUAIDE_DEBUG then
+    require("socket.core")
+    require("LuaPanda").start("127.0.0.1",8818)
+end
 local function Index(t, k)
 	local mt = getmetatable(t)
 	local super = mt
@@ -52,21 +55,7 @@ local function NewIndex(t, k, v)
 	end
 	rawset(t, k, v)
 end
-local function global_index(t, k)
-	local v = rawget(t, k)
-	if v then
-		return v
-	end
-	if type(k) == "string" then
-		local s = str_sub(k, 1, 1)
-		if s == "U" or s == "A" or s == "F" then
-			RegisterClass(k)
-		elseif s == "E" then
-			RegisterEnum(k)
-		end
-	end
-	return rawget(t, k)
-end
+
 local function Class(module , class_name , super_class)
 	local new_class = {}
 	if super_class then 
@@ -80,29 +69,60 @@ local function Class(module , class_name , super_class)
     end
     return new_class
 end
-if WITH_UE4_NAMESPACE then
-	print("WITH_UE4_NAMESPACE==true");
-else
-	local global_mt = {}
-	global_mt.__index = global_index
-	setmetatable(_G, global_mt)
-	UE4 = _G
-
-	print("WITH_UE4_NAMESPACE==false");
-end
 local function logE(...)
 	print("error ******************************")
 	print(...)
 end
-local function import(resource)
-	return UE4.UClass.Load(resource)
+__G__TRACKBACK__ = function(msg)
+	local message = msg;
+
+    -- auto genretated
+	local msg = debug.traceback(msg, 3)
+	
+	logE(msg)
+
+    -- report lua exception
+    buglyReportLuaException(tostring(message), debug.traceback())
+	return msg
 end
+local function import(resource)
+	return UClass.Load(resource)
+end
+
+local function UClass_index(t, k)
+	local v = rawget(t, k)
+	if v then
+		return v
+    end
+	RegisterClass(k)
+	v = rawget(_G, k)
+	rawset(t, k, v)
+	rawset(_G, k, nil)
+	return v
+end
+
+local function UEnum_index(t, k)
+	local v = rawget(t, k)
+	if v then
+		return v
+    end
+    RegisterEnum(k)
+	v = rawget(_G, k)
+	rawset(t, k, v)
+	rawset(_G, k, nil)
+	return v
+end
+UE4 = {}
+UEnum = {}
+setmetatable(UE4, {__index = UClass_index })
+setmetatable(UEnum, {__index = UEnum_index })
 local GA = {
 	initManagerList = {} ,
 }
 function GA:AddInitManager(name , UManager) 
 	self.initManagerList[name] = UManager
 end
+
 _G.GA = GA
 _G.import = import
 _G.Class = Class

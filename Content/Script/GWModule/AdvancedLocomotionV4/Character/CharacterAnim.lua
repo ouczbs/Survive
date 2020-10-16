@@ -1,7 +1,6 @@
 
 
 require "UnLua"
-print("lua class : GameWorld.Character.CharacterAnim")
 local class = Class(GA.Character ,"CharacterAnim")
 
 

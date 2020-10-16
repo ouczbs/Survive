@@ -86,24 +86,94 @@ static int32 UWorld_SpawnActor(lua_State *L)
     }
 
     {
-        const char *ModuleName = NumParams > 6 ? lua_tostring(L, 7) : nullptr;
-        int32 TableRef = INDEX_NONE;
-        if (NumParams > 7 && lua_type(L, 8) == LUA_TTABLE)
-        {
-            lua_pushvalue(L, 8);
-            TableRef = luaL_ref(L, LUA_REGISTRYINDEX);
-        }
-        FScopedLuaDynamicBinding Binding(L, Class, ANSI_TO_TCHAR(ModuleName), TableRef);
         AActor *NewActor = World->SpawnActor(Class, &Transform, SpawnParameters);
         UnLua::PushUObject(L, NewActor);
     }
 
     return 1;
 }
+static int32 UWorld_SpawnLuaActor(lua_State *L)
+{
+	int32 NumParams = lua_gettop(L);
+	if (NumParams < 2)
+	{
+		UE_LOG(LogUnLua, Log, TEXT("%s: Invalid parameters!"), ANSI_TO_TCHAR(__FUNCTION__));
+		lua_pushnil(L);
+		return 1;
+	}
+
+	UWorld *World = Cast<UWorld>(UnLua::GetUObject(L, 1));
+	if (!World)
+	{
+		UE_LOG(LogUnLua, Log, TEXT("%s: Invalid world!"), ANSI_TO_TCHAR(__FUNCTION__));
+		lua_pushnil(L);
+		return 1;
+	}
+
+	UClass *Class = Cast<UClass>(UnLua::GetUObject(L, 2));
+	if (!Class)
+	{
+		UE_LOG(LogUnLua, Log, TEXT("%s: Invalid class!"), ANSI_TO_TCHAR(__FUNCTION__));
+		lua_pushnil(L);
+		return 1;
+	}
+
+	FTransform Transform;
+	if (NumParams > 2)
+	{
+		FTransform *TransformPtr = (FTransform*)GetCppInstanceFast(L, 3);
+		if (TransformPtr)
+		{
+			Transform = *TransformPtr;
+		}
+	}
+
+	FActorSpawnParameters SpawnParameters;
+	if (NumParams > 3)
+	{
+		uint8 CollisionHandlingOverride = (uint8)lua_tointeger(L, 4);
+		SpawnParameters.SpawnCollisionHandlingOverride = (ESpawnActorCollisionHandlingMethod)CollisionHandlingOverride;
+	}
+	if (NumParams > 4)
+	{
+		AActor *Owner = Cast<AActor>(UnLua::GetUObject(L, 5));
+		check(!Owner || (Owner && World == Owner->GetWorld()));
+		SpawnParameters.Owner = Owner;
+	}
+	if (NumParams > 5)
+	{
+		AActor *Actor = Cast<AActor>(UnLua::GetUObject(L, 6));
+		if (Actor)
+		{
+			APawn *Instigator = Cast<APawn>(Actor);
+			if (!Instigator)
+			{
+				Instigator = Actor->GetInstigator();
+			}
+			SpawnParameters.Instigator = Instigator;
+		}
+	}
+
+	{
+		const char *ModuleName = NumParams > 6 ? lua_tostring(L, 7) : nullptr;
+		int32 TableRef = INDEX_NONE;
+		if (NumParams > 7 && lua_type(L, 8) == LUA_TTABLE)
+		{
+			lua_pushvalue(L, 8);
+			TableRef = luaL_ref(L, LUA_REGISTRYINDEX);
+		}
+		FScopedLuaDynamicBinding Binding(L, Class, ANSI_TO_TCHAR(ModuleName), TableRef);
+		AActor *NewActor = World->SpawnActor(Class, &Transform, SpawnParameters);
+		UnLua::PushUObject(L, NewActor);
+	}
+
+	return 1;
+}
 
 static const luaL_Reg UWorldLib[] =
 {
     { "SpawnActor", UWorld_SpawnActor },
+	{ "SpawnLuaActor", UWorld_SpawnLuaActor },
     { nullptr, nullptr }
 };
 
